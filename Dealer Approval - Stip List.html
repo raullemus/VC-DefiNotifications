@@ -1,0 +1,228 @@
+<html>
+<head>
+	<title></title>
+	<style type="text/css">body,
+    table,
+    th,
+    td {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 10px;
+    }
+	</style>
+	<!-- OMMIT STYLE
+  border: solid;
+  padding: 5px;
+  max-width:750px;
+  <td style="text-align:left; width:50%"><img src="https://defistorage.blob.core.windows.net/clientlogo/vc-logo-small.png" style="height:48px; width:128px" /></td>
+
+-->
+</head>
+<body><!-- START TABLE - MAIN -->
+<table style="max-width:750px; width:100%">
+	<tbody>
+		<tr>
+			<td style="vertical-align:top"><!-- START TABLE - HEADER -->
+			<table style="width:100%">
+				<thead>
+					<tr>
+						<td style="text-align:left; vertical-align:bottom; width:45%">
+						<h2>Veros Credit Approval<br />
+						- Funding Check List</h2>
+						</td>
+						<td style="text-align:center; vertical-align:bottom; width:10%">
+						<p>Page 2 of 2</p>
+						</td>
+						<td style="text-align:right; vertical-align:bottom; width:45%">
+						<h2>{{Deal.App Status Description}}</h2>
+						</td>
+					</tr>
+				</thead>
+			</table>
+			<!-- END TABLE - HEADER -->
+
+			<hr /><!-- START TABLE - INDEX -->
+			<table style="width:100%">
+				<tbody>
+					<tr>
+						<td style="vertical-align:top; width:50%">
+						<table style="width:100%">
+							<tbody>
+								<tr>
+									<th style="text-align:left; vertical-align:top; width:40%">Application:</th>
+									<td style="text-align:left; vertical-align:top; width:60%">{{Deal.Application Number}}</td>
+								</tr>
+								<tr>
+									<th style="text-align:left; vertical-align:top; width:40%">Decision Date:</th>
+									<td style="text-align:left; vertical-align:top; width:60%">{{Deal.UW Decision Date}}</td>
+								</tr>
+								<tr>
+									<th style="text-align:left; vertical-align:top; width:40%">Expiration Date:</th>
+									<td style="text-align:left; vertical-align:top; width:60%">{{Recommended.DecisionExpireDate}}</td>
+								</tr>
+								<tr>
+									<th style="text-align:left; vertical-align:top; width:40%">Applicant:</th>
+									<td style="text-align:left; vertical-align:top; width:60%">{{Applicant.Full Name}}</td>
+								</tr>
+								<tr>
+									<th style="text-align:left; vertical-align:top; width:40%">CoApplicant:</th>
+									<td style="text-align:left; vertical-align:top; width:60%">{{CoApplicant.Full Name}}</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+						<td style="vertical-align:top; width:50%">
+						<table style="width:100%">
+							<tbody>
+								<tr>
+									<th style="text-align:left; vertical-align:top; width:40%">Branch:</th>
+									<td style="text-align:left; vertical-align:top; width:60%">{{Dealer.Branch}}</td>
+								</tr>
+								<tr>
+									<th style="text-align:left; vertical-align:top; width:40%">Dealer ID:</th>
+									<td style="text-align:left; vertical-align:top; width:60%">{{Dealer.Client Dealer Id}}</td>
+								</tr>
+								<tr>
+									<th style="text-align:left; vertical-align:top; width:40%">Dealer Name:</th>
+									<td style="text-align:left; vertical-align:top; width:60%">{{Dealer.Name}}</td>
+								</tr>
+								<tr>
+									<th style="text-align:left; vertical-align:top; width:40%">Address:</th>
+									<td style="text-align:left; vertical-align:top; width:60%">{{Dealer.Address}}</td>
+								</tr>
+								<tr>
+									<th style="text-align:left; vertical-align:top; width:40%">City, State &amp; Zip:</th>
+									<td style="text-align:left; vertical-align:top; width:60%">{{Dealer.City}}, {{Dealer.State}} {{Dealer.ZipCd}}</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<!-- END TABLE - INDEX --><!-- START TABLE - STIPULATIONS -->
+
+			<table style="width:100%">
+				<thead>
+					<tr>
+						<th style="background-color:rgb(204, 204, 204); text-align:center">Dealer Stipulations</th>
+						<th style="background-color:rgb(204, 204, 204); text-align:center">Customer Stipulations</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td style="text-align:left; vertical-align:top; width:50%">
+						<p>&Oslash; Copy of Veros Credit Approval</p>
+
+						<p>&Oslash; Original Signed and Endorsed Retail Installment Contract</p>
+
+						<p>&Oslash; Original Signed Credit Application</p>
+
+						<p>&Oslash; Copy of Application for Title with Lien Holder Information</p>
+
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{Custom Fields.RIC ELT Name}}<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{Custom Fields.RIC ELT Address1}}<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{Custom Fields.RIC ELT Address2}}<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ELT Code: {{Custom Fields.RIC ELT ID}}</p>
+
+						<p>&Oslash; Copy of Odometer Statement</p>
+
+						<p>&Oslash; Copy of Agreement to Furnish Insurance</p>
+
+						<p>&Oslash; Copy of Vehicle Bookout (KBB/NADA)</p>
+
+						<p>&Oslash; Copy of Foreign Language Acknowledgement</p>
+						</td>
+						<td style="text-align:left; vertical-align:top; width:50%">
+						<p>&Oslash; Copy of Driver&#39;s License</p>
+
+						<p>&Oslash; Proof of Residence</p>
+
+						<p>&Oslash; Proof of Income</p>
+
+						<p>&Oslash; Proof of Insurance - Must Verify Lien Holder Added</p>
+
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Veros Credit<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P.O. Box 398168<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Minneapolis, MN 55439</p>
+
+						<p>VC Refs Form (6 Min)</p>
+
+						<p><em>*All Stipulations must be dated no more than 30 days from approval date.</em></p>
+
+						<p><em>**Please includes Co-Applicant stipulations when applicable.</em></p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<!-- END TABLE - STIPULATIONS -->
+
+			<hr /><!-- START TABLE - PACKAGE ROUTING -->
+			<table style="vertical-align:bottom; width:100%">
+				<tbody>
+					<tr>
+						<td style="text-align:left; vertical-align:top; width:100%">
+						<p>For a complete Document checklist, please go to: <a href="http://www.veroscredit.com/pdfs/checklist/">www.veroscredit.com/pdfs/checklist/.</a></p>
+
+						<table style="border-collapse:collapse; width:100%">
+							<tbody>
+								<tr>
+									<td colspan="2" style="vertical-align:top; width:100%">
+									<p>For express funding, please send your complete loan package via fax or e-mail prior to sending your originals.</p>
+									</td>
+								</tr>
+								<tr>
+									<td style="text-align:center; width:50%">
+									<p>Fax: 855-811-6122</p>
+									</td>
+									<td style="text-align:center; width:50%">
+									<p>Email: <a href="mailto:Efaxfunding@veroscredit.com">Efaxfunding@veroscredit.com</a></p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<table style="border-collapse:collapse; width:100%">
+							<tbody>
+								<tr>
+									<td colspan="2" style="vertical-align:top; width:100%">
+									<p>Please send your original loan package the address associated to your preferred courier service.</p>
+									</td>
+								</tr>
+								<tr>
+									<td style="text-align:center; width:25%">
+									<p><strong><u>via FEDEX</u></strong><br />
+									Veros Credit<br />
+									4054 Willow Lake Blvd, Suite #2099<br />
+									Memphis, TN 38153</p>
+									</td>
+									<td style="text-align:center; width:25%">
+									<p><strong><u>via UPS or United States Postal Service</u></strong><br />
+									Veros Credit<br />
+									3268 Progress Way, Suite #2099<br />
+									Wilmington, OH 45177-7700</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<p><u><strong>ALERT:</strong></u> To ensure faster funding, please make sure your package is complete upon submiting.</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<!-- END TABLE - PACKAGE ROUTING -->
+
+			<hr /><!-- START TABLE - ATTENTION -->
+			<table style="vertical-align:bottom; width:100%">
+				<tbody>
+					<tr>
+						<td style="vertical-align:bottom"><em><strong>ATTENTION:</strong> Veros Credit may modify any terms on this Approval following underwriting. The amount paid to Dealer may be reduced due to missing documentation waiver fees and/or upon verbal agreement. <strong>Dealer&#39;s acceptance of payment from Veros Credit shall constitute Dealer&#39;s approval of all terms, including any changed terms.</strong> Dealer may rescind this transaction within 30 days of funding upon written notice and by returning all funds paid by Veros Credit.</em></td>
+					</tr>
+				</tbody>
+			</table>
+			<!-- END TABLE - ATTENTION --></td>
+		</tr>
+	</tbody>
+</table>
+<!-- END TABLE - MAIN --></body>
+</html>

@@ -1,0 +1,437 @@
+<html>
+<head>
+	<title></title>
+	<style type="text/css">body,
+    table,
+    th,
+    td {
+      font-family: Arial, Helvetica, sans-serif !important;
+      font-size: 11px;
+    }
+	</style>
+</head>
+<body><!--
+      border: solid;
+      padding: 10px;
+	-->
+<table style="border-collapse:collapse; max-width:1200px; width:100%">
+	<tbody>
+		<tr>
+			<td style="vertical-align:top">
+			<table style="border-collapse:collapse; width:100%">
+				<tbody>
+					<tr>
+						<td style="text-align:left; width:40%"><img src="https://defistorage.blob.core.windows.net/clientlogo/vc-logo-small.png" style="height:48px; width:128px" /></td>
+						<td style="text-align:right; width:60%">
+						<h1>{{Deal.App Status Description}}</h1>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<hr />
+			<table style="border-collapse:collapse; width:100%">
+				<tbody>
+					<tr>
+						<td style="vertical-align:top; width:25%">
+						<table style="border-collapse:collapse; width:100%">
+							<tbody>
+								<tr>
+									<td style="text-align:left; vertical-align:top; width:40%"><strong>Application:</strong></td>
+									<td style="text-align:left; vertical-align:top; width:60%">{{Deal.Application Number}}</td>
+								</tr>
+								<tr>
+									<td style="text-align:left; vertical-align:top; width:40%"><strong>Decision Date:</strong></td>
+									<td style="text-align:left; vertical-align:top; width:60%">{{Deal.UW Decision Date}}</td>
+								</tr>
+								<tr>
+									<td style="text-align:left; vertical-align:top; width:40%"><strong>Expiration Date:</strong></td>
+									<td style="text-align:left; vertical-align:top; width:60%">{Recommended.DecisionExpireDate}</td>
+								</tr>
+								<tr>
+									<td style="text-align:left; vertical-align:top; width:40%"><strong>Applicant:</strong></td>
+									<td style="text-align:left; vertical-align:top">{{Applicant.Full Name}}</td>
+								</tr>
+								<tr>
+									<td style="text-align:left; vertical-align:top; width:40%"><strong>CoApplicant:</strong></td>
+									<td style="text-align:left; vertical-align:top">{{CoApplicant.Full Name}}</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+						<td style="vertical-align:top; width:25%">
+						<table style="border-collapse:collapse; width:100%">
+							<tbody>
+								<tr>
+									<td style="text-align:left; vertical-align:top; width:40%"><strong>Underwriter Name:</strong></td>
+									<td style="text-align:left; vertical-align:top; width:60%">{{Deal.Decisioned by Full Name}}</td>
+								</tr>
+								<tr>
+									<td style="text-align:left; vertical-align:top; width:40%"><strong>Underwriter Phone:</strong></td>
+									<td style="text-align:left; vertical-align:top; width:60%">{{Deal.Decisioned by Phone}}</td>
+								</tr>
+								<tr>
+									<td style="text-align:left; vertical-align:top; width:40%"><strong>Underwriter Fax:</strong></td>
+									<td style="text-align:left; vertical-align:top; width:60%">844-695-1772</td>
+								</tr>
+								<tr>
+									<td style="text-align:left; vertical-align:top; width:40%"><strong>Underwriter Email:</strong></td>
+									<td style="text-align:left; vertical-align:top; width:60%">{{Deal.Decisioned by E-Mail}}</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+						<td style="vertical-align:top; width:25%">
+						<table style="border-collapse:collapse; width:100%">
+							<tbody>
+								<tr>
+									<td style="text-align:left; vertical-align:top; width:40%"><strong>Sales Rep Name:</strong></td>
+									<td style="text-align:left; vertical-align:top; width:60%">{{Dealer.Representative Name}}</td>
+								</tr>
+								<tr>
+									<td style="text-align:left; vertical-align:top; width:40%"><strong>Sales Rep Phone:</strong></td>
+									<td style="text-align:left; vertical-align:top; width:60%">{{Dealer.Representative Phone}}</td>
+								</tr>
+								<tr>
+									<td style="text-align:left; vertical-align:top; width:40%"><strong>Sales Rep Fax:</strong></td>
+									<td style="text-align:left; vertical-align:top; width:60%">{{Dealer.Representative Fax}}</td>
+								</tr>
+								<tr>
+									<td style="text-align:left; vertical-align:top; width:40%"><strong>Sales Rep Email:</strong></td>
+									<td style="text-align:left; vertical-align:top; width:60%">{{Dealer.Representative Email}}</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+						<td style="vertical-align:top; width:25%">
+						<table style="border-collapse:collapse; width:100%">
+							<tbody>
+								<tr>
+									<td colspan="4 " style="text-align:left; vertical-align:top; width:40%"><strong>Branch: </strong> {{Dealer.Branch}}</td>
+								</tr>
+								<tr>
+									<td colspan="4 " style="text-align:left; vertical-align:top"><strong>Dealer ID : </strong>{{Dealer.Client Dealer Id}}</td>
+								</tr>
+								<tr>
+									<td colspan="4 " style="text-align:left; vertical-align:top">{{Dealer.Name}}</td>
+								</tr>
+								<tr>
+									<td colspan="4 " style="text-align:left; vertical-align:top">{{Dealer.Address}}</td>
+								</tr>
+								<tr>
+									<td colspan="4 " style="text-align:left; vertical-align:top">{{Dealer.City}}, {{Dealer.State}} {{Dealer.ZipCd}}</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<hr />
+			<table style="border-collapse:collapse; width:100%">
+				<tbody>
+					<tr>
+						<td style="vertical-align:top; width:33%">
+						<table style="border-collapse:collapse; width:100%">
+							<thead>
+								<tr>
+									<td colspan="2 " style="background-color:rgb(204, 204, 204); text-align:center"><strong>Deal Structure</strong></td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td style="text-align:left; vertical-align:top"><strong>Req. Amt Financed:</strong></td>
+									<td style="vertical-align:top">${{Requested.Amount Financed}}</td>
+								</tr>
+								<tr>
+									<td style="text-align:left; vertical-align:top"><strong>Appr. Amt Financed:</strong></td>
+									<td style="vertical-align:top">${{Recommended.EstAmtFinanced}}</td>
+								</tr>
+								<tr>
+									<td style="text-align:left; vertical-align:top"><strong>Gap:</strong></td>
+									<td style="vertical-align:top">${{Recommended.Gap}}</td>
+								</tr>
+								<tr>
+									<td style="text-align:left; vertical-align:top"><strong>CPI:</strong></td>
+									<td style="vertical-align:top">${{Recommended.Credit Life Ins}} &nbsp; <strong>Term:</strong> {{Recommended.CPI Term}}</td>
+								</tr>
+								<tr>
+									<td style="text-align:left; vertical-align:top"><strong>Svc Contract:</strong></td>
+									<td style="vertical-align:top">${{Recommended.Warranty}} &nbsp; <strong>Term:</strong> {{Recommended.Warranty Term}}</td>
+								</tr>
+								<tr>
+									<td style="text-align:left; vertical-align:top"><strong>Total Down:</strong></td>
+									<td style="vertical-align:top">${{Recommended.TotalDown}}</td>
+								</tr>
+								<tr>
+									<td style="text-align:left; vertical-align:top"><strong>APR:</strong></td>
+									<td style="vertical-align:top">{{Recommended.Buy Rate}}%</td>
+								</tr>
+								<tr>
+									<td style="text-align:left; vertical-align:top"><strong>Term:</strong></td>
+									<td style="vertical-align:top">{{Recommended.TermMonths}}</td>
+								</tr>
+								<tr>
+									<td style="text-align:left; vertical-align:top"><strong>Monthly Payment:</strong></td>
+									<td style="vertical-align:top">${{Recommended.Payment}}</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+						<td style="vertical-align:top; width:33%">
+						<table style="border-collapse:collapse; width:100%">
+							<thead>
+								<tr>
+									<td colspan="2 " style="background-color:rgb(204, 204, 204); text-align:center"><strong>Dealer Check Breakdown</strong></td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td style="text-align:left; vertical-align:top; width:50%"><strong>Amt Financed:</strong></td>
+									<td style="vertical-align:top; width:50%">${{Recommended.EstAmtFinanced}}</td>
+								</tr>
+								<tr>
+									<td style="text-align:left; vertical-align:top"><strong>- Discount:</strong></td>
+									<td style="vertical-align:top">${{Recommended.VCDiscountDollarNet}}</td>
+								</tr>
+								<tr>
+									<td style="text-align:left; vertical-align:top"><strong>- Doc Fee:</strong></td>
+									<td style="vertical-align:top">${{Recommended.TotalDocFeeRec}}</td>
+								</tr>
+								<tr>
+									<td style="text-align:left; vertical-align:top"><strong>- Withhold:</strong></td>
+									<td style="vertical-align:top">${{Recommended.Withhold}} &nbsp; <strong>Term:</strong> {{Recommended.Withhold Term}}</td>
+								</tr>
+								<tr>
+									<td style="text-align:left; vertical-align:top"><strong>- Reserve:</strong></td>
+									<td style="vertical-align:top">${{Recommended.Reserve}}</td>
+								</tr>
+								<tr>
+									<td style="text-align:left; vertical-align:top"><strong>- CPI Fee:</strong></td>
+									<td style="vertical-align:top">${{Recommended.Credit Life Ins}} &nbsp; <strong>Term:</strong> {{Recommended.CPI Term}}</td>
+								</tr>
+								<tr>
+									<td style="text-align:left; vertical-align:top"><strong>- Gap Fee:</strong></td>
+									<td style="vertical-align:top">${{Recommended.Gap VC}}</td>
+								</tr>
+								<tr>
+									<td style="text-align:left; vertical-align:top"><strong>- Service Contract Fee:</strong></td>
+									<td style="vertical-align:top">${{Recommended.AUL VC}}</td>
+								</tr>
+								<tr>
+									<td style="text-align:left; vertical-align:top"><strong>+ Adjustments:</strong></td>
+									<td style="vertical-align:top">${{Recommended.TotalCreditsRec}}</td>
+								</tr>
+								<tr>
+									<td style="text-align:left; vertical-align:top">
+									<h2>NET CHECK:</h2>
+									</td>
+									<td style="vertical-align:top">
+									<h2>${{Recommended.Dealer Check}}</h2>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+						<td style="vertical-align:top; width:33%">
+						<table style="border-collapse:collapse; width:100%">
+							<thead>
+								<tr>
+									<td colspan="2 " style="background-color:rgb(204, 204, 204); text-align:center"><strong>Vehicle Information</strong></td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td style="text-align:left; vertical-align:top; width:40%"><strong>VIN:</strong></td>
+									<td style="vertical-align:top; width:60%">{{Recommended.Vehicle VIN}}</td>
+								</tr>
+								<tr>
+									<td style="text-align:left; vertical-align:top"><strong>Year:</strong></td>
+									<td style="vertical-align:top">{{Recommended.Vehicle Year}}</td>
+								</tr>
+								<tr>
+									<td style="text-align:left; vertical-align:top"><strong>Vehicle:</strong></td>
+									<td style="vertical-align:top">{{Recommended.Vehicle Make}} {{Recommended.Vehicle Model}}</td>
+								</tr>
+								<tr>
+									<td style="text-align:left; vertical-align:top"><strong>Mileage:</strong></td>
+									<td style="vertical-align:top">{{Recommended.Vehicle Mileage}}</td>
+								</tr>
+								<tr>
+									<td style="text-align:left; vertical-align:top"><strong>Book Value:</strong></td>
+									<td style="vertical-align:top">${{Recommended.Vehicle Current Valuation}}</td>
+								</tr>
+								<tr>
+									<td style="text-align:left; vertical-align:top"><strong>Veh Class:</strong></td>
+									<td style="vertical-align:top">{{Recommended.Vehicle Class}}</td>
+								</tr>
+								<tr>
+									<td style="text-align:left; vertical-align:top"><strong>LTV:</strong></td>
+									<td style="vertical-align:top">{{Recommended.LtvRatio}}%</td>
+								</tr>
+								<tr>
+									<td style="text-align:left; vertical-align:top"><strong>Recourse:</strong></td>
+									<td style="vertical-align:top">{{Recommended.Recourse}} Payment(s)</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<hr />
+			<table style="border-collapse:collapse; width:100%">
+				<tbody>
+					<tr>
+						<td style="vertical-align:top; width:33%">
+						<table style="border-collapse:collapse; width:100%">
+							<thead>
+								<tr>
+									<td colspan="3 " style="background-color:rgb(204, 204, 204); text-align:center"><strong>Dealer Stipulations</strong></td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td colspan="2 " style="vertical-align:top">
+									<p>For a complete Document checklist, please go to: <a href="http://www.veroscredit.com/pdfs/checklist/ ">www.veroscredit.com/pdfs/checklist/</a></p>
+									</td>
+								</tr>
+								<tr>
+									<td style="vertical-align:top; width:50%">
+									<ul>
+										<li>Copy of Veros Credit Approval</li>
+										<li>Original Signed and Endorsed Retail Installment Contract</li>
+										<li>Original Signed Credit Application</li>
+										<li>Copy of Application for Title with Lien Holder Information
+										<ul>
+											<li>{{Custom Fields.RIC ELT Name}}</li>
+											<li>{{Custom Fields.RIC ELT Address1}}</li>
+											<li>{{Custom Fields.RIC ELT Address2}}</li>
+											<li>ELT Code: {{Custom Fields.RIC ELT ID}}</li>
+										</ul>
+										</li>
+										<li>Copy of Odometer Statement</li>
+										<li>Copy of Agreement to Furnish Insurance</li>
+										<li>Copy of Vehicle Bookout</li>
+										<li>Copy of Foreign Language Acknowledgement</li>
+									</ul>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+						<td style="vertical-align:top; width:33%">
+						<table style="border-collapse:collapse; width:100%">
+							<thead>
+								<tr>
+									<td colspan="3 " style="background-color:rgb(204, 204, 204); text-align:center"><strong>Customer Stipulations</strong></td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td colspan="2 " style="vertical-align:top">
+									<p><em>*Includes Co-Applicant when applicable.</em></p>
+
+									<p><em>**All Stipulations must be dated no more than 30 days from approval date.</em></p>
+									</td>
+								</tr>
+								<tr>
+									<td style="vertical-align:top; width:50%">
+									<ul>
+										<li>Copy of Driver&#39;s License</li>
+										<li>Proof of Residence</li>
+										<li>Proof of Income</li>
+										<li>Proof of Insurance - Must Verify Lien Holder Added
+										<ul>
+											<li>Veros Credit</li>
+											<li>P.O. Box 398168</li>
+											<li>Minneapolis, MN 55439</li>
+										</ul>
+										</li>
+										<li>VC Refs Form (6 Min)</li>
+									</ul>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<hr />
+			<table style="border-collapse:collapse; width:100%">
+				<tbody>
+					<tr>
+						<td style="vertical-align:top; width:33%">
+						<table style="border-collapse:collapse; width:100%">
+							<thead>
+								<tr>
+									<td colspan="3 " style="background-color:rgb(204, 204, 204); text-align:center"><strong>Underwriter Notes</strong></td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td style="text-align:left; vertical-align:top">
+									<p>{{Recommended.Underwriter Notification Comment}}</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+						<td style="vertical-align:top; width:33%">
+						<table style="border-collapse:collapse; width:100%">
+							<thead>
+								<tr>
+									<td colspan="3 " style="background-color:rgb(204, 204, 204); text-align:center"><strong>Additional Stipulations</strong></td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td style="text-align:left; vertical-align:top">
+									<p>{{dealernotes}}</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<hr />
+			<table style="border-collapse:collapse; width:100%">
+				<tbody>
+					<tr>
+						<td colspan="2 " style="vertical-align:top; width:50%">
+						<table style="border-collapse:collapse; width:100%">
+							<tbody>
+								<tr>
+									<td>
+									<p style="text-align:left"><span style="color:#FF0000"><em><strong>*If you would like to speak with one of our qualified underwriters or would like to rehash your approval, please feel free to contact us.</strong></em></span></p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<hr />
+			<table style="border-collapse:collapse; width:100%">
+				<tbody>
+					<tr>
+						<td><em><strong>ATTENTION:</strong> Veros Credit may modify any terms on this Approval following underwriting. The amount paid to Dealer may be reduced due to missing documentation waiver fees and/or upon verbal agreement. <strong>Dealer&#39;s acceptance of payment from Veros Credit shall constitute Dealer&#39;s approval of all terms, including any changed terms.</strong> Dealer may rescind this transaction within 30 days of funding upon written notice and by returning all funds paid by Veros Credit.</em></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<hr /></td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>

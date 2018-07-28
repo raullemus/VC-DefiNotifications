@@ -1,0 +1,174 @@
+<html>
+<head>
+	<title></title>
+	<style type="text/css">body, table, th, td {
+	font-family: Calibri;
+    max-width:800px;
+  	max-height:1200px;
+    <>border-collapse:collapse;
+    <>border-style: solid;
+    padding: 4px;
+    <>padding: 20px;
+    font-size:12px;
+    }
+	</style>
+</head>
+<body>
+<table style="max-height:1200px; max-width:650px; vertical-align:text-top"><!-- #THIS IS THE TABLE FOR THE TITLE -->
+	<tbody>
+		<tr><!-- #THIS IS THE TABLE FOR THE HEADER LOGO AND WEBSITE -->
+			<td colspan="4" style="text-align:center; vertical-align:middle">
+			<div style="text-align:center;font-size:14px;"><strong>Veros Credit</strong></div>
+
+			<div style="text-align:center;font-size:10px;">2333 N. Broadway Ste 400 | Santa Ana, CA 92706<br />
+			<a href="http://www.veroscredit.com">www.veroscredit.com</a></div>
+
+			<hr /></td>
+		</tr>
+		<!-- #THIS IS THE TABLE FOR THE APPLICATION DETAIL -->
+		<tr>
+			<td colspan="4" style="text-align:center; vertical-align:middle">
+			<h1><strong>FUNDING NOTICE</strong></h1>
+			</td>
+		</tr>
+		<!-- #THIS LINE CREATES SPACE-->
+		<tr>
+			<td colspan="4">&nbsp;</td>
+		</tr>
+		<!-- #THIS IS THE APPLICATION DETAIL-->
+		<tr>
+			<td style="text-align:right; width:25%"><strong>Date:</strong></td>
+			<td style="text-align:left; width:25%">{{Recommended.TodaysDate}}</td>
+			<td style="text-align:right; width:25%"><strong>Applicant:</strong></td>
+			<td style="text-align:left; width:25%">{{Applicant.Full Name}}</td>
+		</tr>
+		<tr>
+			<td style="text-align:right; width:25%"><strong>Application:</strong></td>
+			<td style="text-align:left; width:25%">{{Retail Installment Contract.Vehicle Year}}</td>
+			<td style="text-align:right; width:25%"><strong>Dealer ID:</strong></td>
+			<td style="text-align:left; width:25%">{{Dealer.Client Dealer Id}}</td>
+		</tr>
+		<tr>
+			<td style="text-align:right; width:25%"><strong>Year:</strong></td>
+			<td style="text-align:left; width:25%">{{Deal.Application Number}}</td>
+			<td style="text-align:right; width:25%"><strong>Branch:</strong></td>
+			<td style="text-align:left; width:25%">{{Dealer.Branch}}</td>
+		</tr>
+		<tr>
+			<td style="text-align:right; width:25%"><strong>Make:</strong></td>
+			<td style="text-align:left; width:25%">{{Retail Installment Contract.Vehicle Make}}</td>
+			<td style="text-align:right; width:25%"><strong>Dealer Name:</strong></td>
+			<td style="text-align:left; width:25%">{{Dealer.Name}}</td>
+		</tr>
+		<tr>
+			<td style="text-align:right; width:25%"><strong>Model:</strong></td>
+			<td style="text-align:left; width:25%">{{Retail Installment Contract.Vehicle Model}}</td>
+			<td style="text-align:right; width:25%"><strong>VIN:</strong></td>
+			<td style="text-align:left; width:25%">{{Recommended.Vehicle VIN}}</td>
+		</tr>
+		<!-- #THIS LINE CREATES SPACE-->
+		<tr>
+			<td colspan="4">&nbsp;</td>
+		</tr>
+		<!-- #THIS IS THE MESSAGE TO DEALER-->
+		<tr>
+			<td colspan="4">
+			<p>Congratulations! Your deal has been approved for funding. Below is a brief breakdown of your disbursement of fees. You may expect funds equal to the amount indicated on the &quot;Check to Dealer&quot; line below. We appreciate your business and hope to continue providing you with excellent service.</p>
+			</td>
+		</tr>
+		<!-- #THIS LINE CREATES SPACE-->
+		<tr>
+			<td colspan="4" style="background-color:rgb(204, 204, 204); text-align:center; width:50%">
+			<p><strong>Distribution</strong></p>
+			</td>
+		</tr>
+		<!-- #THIS IS THE DISTRIBUTION BREAKDOWN-->
+		<tr>
+			<td style="width:15%">&nbsp;</td>
+			<td style="text-align:right; width:15%">
+			<p>Amount Financed:&nbsp;</p>
+			</td>
+			<td style="text-align:left; width:15%">
+			<p>${{Retail Installment Contract.Amount Financed}}</p>
+			</td>
+			<td style="width:15%">&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="width:15%">&nbsp;</td>
+			<td style="text-align:right; width:15%">
+			<p>Discount:&nbsp;</p>
+			</td>
+			<td style="text-align:left; width:15%">
+			<p>${{Retail Installment Contract.VCDiscountDollarExport}}</p>
+			</td>
+			<td style="width:15%">&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="width:15%">&nbsp;</td>
+			<td style="text-align:right; width:15%">
+			<p>Reserve:&nbsp;</p>
+			</td>
+			<td style="text-align:left; width:15%">
+			<p>${{Retail Installment Contract.ReserveDollar}}</p>
+			</td>
+			<td style="width:15%">&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="width:15%">&nbsp;</td>
+			<td style="text-align:right; width:15%">
+			<p>Withhold:&nbsp;</p>
+			</td>
+			<td style="text-align:left; width:15%">
+			<p>${{Retail Installment Contract.WithholdDollar}}&nbsp;Term:&nbsp;{{Retail Installment Contract.WithholdTerm}}</p>
+			</td>
+			<td style="width:15%">&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="width:15%">&nbsp;</td>
+			<td style="text-align:right; width:15%">
+			<p>Add-On fees:&nbsp;</p>
+			</td>
+			<td style="text-align:left; width:15%">
+			<p>${{Custom Fields.RIC Add-On Fee Total}}</p>
+			</td>
+			<td style="width:15%">&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="width:15%">&nbsp;</td>
+			<td style="text-align:right; width:15%">
+			<p style="text-align:right">Origination fees:&nbsp;</p>
+			</td>
+			<td style="text-align:left; width:15%">
+			<p>${{Custom Fields.RIC Acq Fee total}}</p>
+			</td>
+			<td style="width:15%">&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="width:15%">&nbsp;</td>
+			<td style="text-align:right; width:15%">
+			<p style="text-align:right">Recourse:&nbsp;</p>
+			</td>
+			<td style="text-align:left; width:15%">
+			<p>{{Recommended.Recourse}}</p>
+			</td>
+			<td style="width:15%">&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="width:15%">&nbsp;</td>
+			<td style="text-align:right; width:15%">
+			<p><strong>Check to Dealer:</strong>&nbsp;</p>
+			</td>
+			<td style="text-align:left; width:15%">
+			<p><strong>${{Retail Installment Contract.DealerCheck}}</strong></p>
+			</td>
+			<td style="width:15%">&nbsp;</td>
+		</tr>
+		<!-- #THIS IS THE DISCLAIMER-->
+		<tr>
+			<td colspan="4" style="vertical-align:bottom">
+			<hr /><em><strong>ATTENTION:</strong> Veros Credit may modify any terms on this Approval following underwriting. The amount paid to Dealer may be reduced due to missing documentation waiver fees and/or upon verbal agreement. <strong>Dealer&#39;s acceptance of payment from Veros Credit shall constitute Dealer&#39;s approval of all terms, including any changed terms.</strong> Dealer may rescind this transaction within 30 days of funding upon written notice and by returning all funds paid by Veros Credit.</em></td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>
